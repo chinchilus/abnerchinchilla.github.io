@@ -262,8 +262,9 @@ body { display: flex; min-height: 100vh; }
   background:
   /*  linear-gradient(135deg, #1e3a2f 0%, #3a7055 60%, #5a9e7a 100%);
   /* To use a real photo: */
-  background-image: url('Hero.jpg');
-  background-size: cover; background-position: center;
+background-image: url('Hero.jpg');
+background-size: cover;
+background-position: center;
 }
 
 .hero::before {
