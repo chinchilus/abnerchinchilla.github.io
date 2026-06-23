@@ -260,10 +260,10 @@ body { display: flex; min-height: 100vh; }
   position: relative;
   /* Gradient placeholder — swap in your own image below */
   background:
-    linear-gradient(135deg, #1e3a2f 0%, #3a7055 60%, #5a9e7a 100%);
+  /*  linear-gradient(135deg, #1e3a2f 0%, #3a7055 60%, #5a9e7a 100%);
   /* To use a real photo: */
-  /* background-image: url('hero.jpg'); */
-  /* background-size: cover; background-position: center; */
+  background-image: url('hero.jpg');
+  background-size: cover; background-position: center;
 }
 
 .hero::before {
