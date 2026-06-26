@@ -14,7 +14,7 @@
   --bg-card: #ffffff;
   --border: #e2e8e4;
   --white: #ffffff;
-  --sidebar-width: 230px;
+  --sidebar-width: 280px;
   --font-body: 'Inter', sans-serif;
   --font-display: 'Lora', serif;
 }
@@ -254,23 +254,27 @@ body { display: flex; min-height: 100vh; }
 /* ── HERO ────────────────────────────────────── */
 .hero {
   margin: 24px 28px 0;
-  height: 240px;
+  height: 280px;
   border-radius: 14px;
   overflow: hidden;
   position: relative;
-  /* Gradient placeholder — swap in your own image below */
-  background:
-  /*  linear-gradient(135deg, #1e3a2f 0%, #3a7055 60%, #5a9e7a 100%);
-  /* To use a real photo: */
-background-image: url('Hero.jpg');
-background-size: cover;
-background-position: center;
+  background: var(--green-800);
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 1;
   background: linear-gradient(
     to right,
     rgba(20, 40, 28, 0.82) 0%,
@@ -284,6 +288,7 @@ background-position: center;
   bottom: 36px;
   left: 36px;
   max-width: 420px;
+  z-index: 2;
 }
 
 .hero-eyebrow {
